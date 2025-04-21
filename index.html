@@ -16,23 +16,22 @@
 
     <input type="file" id="imageInput" accept="image/*" multiple />
 
-    <div id="imageContainer">
-        <div id="infoArea">
-            <input type="text" id="storeName" placeholder="店名" />
-            <textarea id="memoText" placeholder="メモ入力"></textarea>
-        </div>
-    </div>
-
     <div id="imageWrapper">
         <button id="prevBtn" class="navBtn">◀</button>
-        <img id="currentImage" src="" alt="画像" />
+
+        <div id="zoomContainer">
+            <img id="currentImage" src="" alt="画像" />
+        </div>
+
         <button id="nextBtn" class="navBtn">▶</button>
     </div>
 
-
+    <div id="infoArea">
+        <input type="text" id="storeName" placeholder="店名" />
+        <textarea id="memoText" placeholder="メモ入力"></textarea>
+    </div>
 
     <script src="app.js"></script>
-
 </body>
 
 </html>
