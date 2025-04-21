@@ -1,0 +1,71 @@
+/* デザイン（レイアウトや色など） */
+body {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+#imageContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+#currentImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#infoArea {
+    margin-top: 10px;
+}
+
+#storeName,
+#memoText {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#imageWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

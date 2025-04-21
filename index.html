@@ -1,0 +1,38 @@
+<!-- アプリのメイン画面（画像アップロード、一覧表示など） -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Errand app</title>
+</head>
+
+<body>
+    <h1>Errand 商品ビューア</h1>
+
+    <input type="file" id="imageInput" accept="image/*" multiple />
+
+    <div id="imageContainer">
+        <div id="infoArea">
+            <input type="text" id="storeName" placeholder="店名" />
+            <textarea id="memoText" placeholder="メモ入力"></textarea>
+        </div>
+    </div>
+
+    <div id="imageWrapper">
+        <button id="prevBtn" class="navBtn">◀</button>
+        <img id="currentImage" src="" alt="画像" />
+        <button id="nextBtn" class="navBtn">▶</button>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
